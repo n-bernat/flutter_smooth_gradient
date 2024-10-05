@@ -1,0 +1,23 @@
+name: example
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+  flutter: ^3.24.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  smooth_gradient:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  leancode_lint: ^14.1.0
+
+flutter:
+  uses-material-design: true
