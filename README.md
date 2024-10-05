@@ -1,39 +1,55 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# flutter_smooth_gradient
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+[![Package](https://img.shields.io/pub/v/flutter_smooth_gradient.svg)](https://pub.dev/packages/flutter_smooth_gradient) [![Publisher](https://img.shields.io/pub/publisher/flutter_smooth_gradient.svg)](https://pub.dev/packages/flutter_smooth_gradient/publisher) [![MIT License](https://img.shields.io/badge/license-MIT-purple.svg)](https://opensource.org/licenses/MIT) [![LeanCode Style](https://img.shields.io/badge/style-leancode__lint-black)](https://pub.dartlang.org/packages/leancode_lint)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+`flutter_smooth_gradient` is a package that allows you to create linear gradients that use a specific curve.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+|                                                                                                                          Status                                                                                                                           |               Comments               |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------: |
+| [![flutter_smooth_gradient - Tests (stable)](https://github.com/n-bernat/flutter_smooth_gradient/actions/workflows/flutter_tests_stable.yaml/badge.svg)](https://github.com/n-bernat/flutter_smooth_gradient/actions/workflows/flutter_tests_stable.yaml) |    Current stable Flutter version    |
+|    [![flutter_smooth_gradient - Tests (beta)](https://github.com/n-bernat/flutter_smooth_gradient/actions/workflows/flutter_tests_beta.yaml/badge.svg)](https://github.com/n-bernat/flutter_smooth_gradient/actions/workflows/flutter_tests_beta.yaml)    |     Current beta Flutter version     |
+|    [![flutter_smooth_gradient - Tests (3.24.0)](https://github.com/n-bernat/flutter_smooth_gradient/actions/workflows/flutter_tests_min.yaml/badge.svg)](https://github.com/n-bernat/flutter_smooth_gradient/actions/workflows/flutter_tests_min.yaml)    | The oldest supported Flutter version |
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+1. Add this package to your dependencies.
+
+```yaml
+dependencies:
+  smooth_gradient: latest_version
+```
+
+2. Get the dependencies.
+
+```sh
+flutter pub get
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Replace `LinearGradient` with a `SmoothGradient` and optionally provide a curve.
 
 ```dart
-const like = 'sample';
+return DecoratedBox(
+  decoration: BoxDecoration(
+    gradient: SmoothGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      from: Colors.black,
+      to: Colors.white,
+    ),
+  ),
+  child: const SizedBox.square(
+    dimension: 100,
+  ),
+);
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+- This package requires at least Flutter 3.24 to work.
+- If there are any issues feel free to go to [GitHub Issues](https://github.com/n-bernat/flutter_smooth_gradient/issues) and report a bug.
+
+## Maintainers
+
+- [Nikodem Bernat](https://nikodembernat.com)
