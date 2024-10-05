@@ -51,6 +51,7 @@ return DecoratedBox(
 
 - This package requires at least Flutter 3.24 to work.
 - If there are any issues feel free to go to [GitHub Issues](https://github.com/n-bernat/flutter_smooth_gradient/issues) and report a bug.
+- Inspired by [SmoothGradient](https://github.com/raymondjavaxx/SmoothGradient) for SwiftUI and [X (Twitter) post](https://x.com/SebJVidal/status/1841876770661806524).
 
 ## Maintainers
 
