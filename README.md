@@ -1,8 +1,8 @@
-# flutter_smooth_gradient
+# Smooth Gradient
 
 [![Package](https://img.shields.io/pub/v/flutter_smooth_gradient.svg)](https://pub.dev/packages/flutter_smooth_gradient) [![Publisher](https://img.shields.io/pub/publisher/flutter_smooth_gradient.svg)](https://pub.dev/packages/flutter_smooth_gradient/publisher) [![MIT License](https://img.shields.io/badge/license-MIT-purple.svg)](https://opensource.org/licenses/MIT) [![LeanCode Style](https://img.shields.io/badge/style-leancode__lint-black)](https://pub.dartlang.org/packages/leancode_lint)
 
-`flutter_smooth_gradient` is a package that allows you to create linear gradients that use a specific curve.
+`smooth_gradient` is a package that allows you to create linear gradients that use a specific curve.
 
 |                                                                                                                          Status                                                                                                                           |               Comments               |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------: |
@@ -37,6 +37,8 @@ return DecoratedBox(
       end: Alignment.bottomCenter,
       from: Colors.black,
       to: Colors.white,
+      // Defaults to `Curves.easeInOut`.
+      curve: Curves.easeIn,
     ),
   ),
   child: const SizedBox.square(
