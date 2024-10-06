@@ -22,8 +22,11 @@ class _PageState extends State<_Page> {
 
   @override
   Widget build(BuildContext context) {
-    const from = Colors.black;
-    final to = from.withOpacity(0);
+    // Black (100% opacity).
+    const from = Color(0xFF000000);
+
+    // Black (0% opacity).
+    const to = Color(0x00000000);
 
     return Scaffold(
       appBar: AppBar(
@@ -50,7 +53,7 @@ class _PageState extends State<_Page> {
             padding: const EdgeInsets.all(16),
             child: Center(
               child: DropdownMenu<Curve>(
-                initialSelection: Curves.easeInOut,
+                initialSelection: _curve,
                 dropdownMenuEntries: const [
                   DropdownMenuEntry(
                     label: 'Curves.easeInOut',
