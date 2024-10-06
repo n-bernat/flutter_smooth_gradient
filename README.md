@@ -35,8 +35,6 @@ Replace `LinearGradient` with a `SmoothGradient` and optionally provide a curve.
 return DecoratedBox(
   decoration: BoxDecoration(
     gradient: SmoothGradient(
-      begin: Alignment.topCenter,
-      end: Alignment.bottomCenter,
       from: Colors.black,
       to: Colors.white,
       // Defaults to `Curves.easeInOut`.
