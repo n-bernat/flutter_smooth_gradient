@@ -1,1 +1,6 @@
 include: package:leancode_lint/analysis_options_package.yaml
+
+# Ignore depracated analyzer rules from the linter package.
+analyzer:
+  errors:
+    included_file_warning: ignore
