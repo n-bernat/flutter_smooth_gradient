@@ -1,5 +1,5 @@
 # flutter_tests_*.yaml actions are duplicated, because GitHub doesn't support badges for matrix builds.
-name: app_preferences - Tests (beta)
+name: smooth_gradient - Tests (beta)
 on:
   workflow_dispatch:
   pull_request:
