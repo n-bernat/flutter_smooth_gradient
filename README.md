@@ -10,6 +10,8 @@
 |    [![flutter_smooth_gradient - Tests (beta)](https://github.com/n-bernat/flutter_smooth_gradient/actions/workflows/flutter_tests_beta.yaml/badge.svg)](https://github.com/n-bernat/flutter_smooth_gradient/actions/workflows/flutter_tests_beta.yaml)    |     Current beta Flutter version     |
 |    [![flutter_smooth_gradient - Tests (3.24.0)](https://github.com/n-bernat/flutter_smooth_gradient/actions/workflows/flutter_tests_min.yaml/badge.svg)](https://github.com/n-bernat/flutter_smooth_gradient/actions/workflows/flutter_tests_min.yaml)    | The oldest supported Flutter version |
 
+![A comparison of different gradient curves.](https://github.com/n-bernat/flutter_smooth_gradient/blob/master/screenshots/screenshot.png?raw=true)
+
 ## Getting started
 
 1. Add this package to your dependencies.
